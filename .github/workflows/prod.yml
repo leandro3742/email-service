@@ -17,7 +17,7 @@ jobs:
       run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Pull Docker image from Docker Hub
-      run: docker pull username/repository:latest
+      run: docker pull ${{ secrets.DOCKER_USERNAME }}/email-service:latest
 
     - name: Run Docker container
-      run: docker run -d -p 80:3000 username/repository:latest
+      run: docker run -d -p 80:3000 ${{ secrets.DOCKER_USERNAME }}/email-service:latest
