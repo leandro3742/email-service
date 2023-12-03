@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{subject}}</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #0066cc;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h3>Informacion del cliente</h3>
+    <p>Nombre del padre: {{father_name}}</p>
+    <p>Nombre del nino: {{child_name}}</p>
+
+    <h3>Detalles del evento</h3>
+    <p>Fecha del evento: {{event_date}}</p>
+    <p>Hora del evento: {{event_time}}</p>
+    <p>Numero de invitados: {{guests_number}}</p>
+    <p>Nombre del paquete: {{package_name}}</p>
+    <p>Tipo de evento: {{eventType}}</p>
+  </div>
+</body>
+
+</html>
